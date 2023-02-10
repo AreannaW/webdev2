@@ -13,11 +13,6 @@ html {
 }
 
 
-.indent {
-  margin-top: px;
-    margin-left: 40px;
-}
-
 
 
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
