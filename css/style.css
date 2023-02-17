@@ -205,8 +205,32 @@ figure.responsive iframe {
     height: 100%;
 }
 
-
-
+.boxtitle{
+  top: 10vw;
+}
+.box2{
+ padding-right: 30px;
+}
+.aboutimg{
+  width:40vw;
+}
+.container{
+display: flex;
+flex-direction: row;
+}
+@media (max-width: 767px) {
+  .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+ 
+  
+}
+.home{
+  background-color: white;
+  color:black
+}
 /* A better looking default horizontal rule */
 hr {
     display: block;
