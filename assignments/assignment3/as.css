@@ -113,10 +113,12 @@ body{
         justify-content: center;
     }
     .wrapper1img{
-        width:40vw;
+        width:50vw;
       }
       .wrapper2img{
-        width:30vw;
+        width:50vw;
       }
-      wrapper
-  }
+      .wrapper{
+        width: 50vw;
+      }
+    }
