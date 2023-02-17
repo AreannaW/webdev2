@@ -75,6 +75,7 @@ body{
   /*About*/
   .boxtitle{
     top: 10vw;
+    text-decoration: underline;
   }
   .box2{
    padding-right: 30px;
@@ -128,7 +129,7 @@ flex-direction: row;
   }
   .wrapperg{
     padding: 0px;
-   color: black;
+   color: lightpink;
   }
   /*moblie*/
  
