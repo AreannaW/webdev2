@@ -14,8 +14,7 @@ html {
 
 
 .indent {
-  margin-top: px;
-    margin-left: 40px;
+  padding-left: 1rem;
 }
 
 
@@ -133,6 +132,7 @@ nav{
   margin: 20px;
   width: 30vw;
   text-align: center;
+  align-items: center;
   background-color: #333;
   color: #e5eaf5;
 }
@@ -228,8 +228,16 @@ flex-direction: row;
   
 }
 .home{
-  background-color: white;
-  color:black
+  background-color:#494D5f;
+  color:black;
+  display: flex;
+  justify-content: center;
+}
+.homeimg{
+  width:40%;
+}
+.hometext1{
+  left: 2vw;
 }
 /* A better looking default horizontal rule */
 hr {
@@ -240,6 +248,90 @@ hr {
     margin: 1em 0px;
     padding: 0px;
 }
+.chicken{
+  background-color: antiquewhite;
+  padding: 1rem 20rem ;
+}
+.new{
+  background-color: antiquewhite;
+  color:#333;
+}
+.newf{
+  font-size: xx-small;
+  padding: 1rem 5rem ;
+}
+.new :hover{
+  background-image: url(../img/cat.jpeg);
+  position: absolute;
+  right: 20;
+}
+.chicken:hover{
+  background-color: transparent;
+  color: azure;
+}
+.newp1:hover{
+  background-color: pink;
+  color: black;
+}
+.newp2:hover{
+  background-color: aqua;
+  color:black;
+}
+@keyframes jump {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.text {
+  animation-delay: 2s;
+  animation: jump 1s 3s;
+}
+.text {
+  transition: transform 0.3s ease-in-out;
+}
+
+.text:hover {
+  transform: translateY(-20px);
+}
+.text {
+  transition: transform 0.3s ease-in-out;
+}
+
+.text[data-scroll="0"] {
+  transform: translateY(0);
+}
+
+.text[data-scroll="500"] {
+  transform: translateY(-20px);
+}
+.pig {
+  position: relative;
+}
+
+.pigtext {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.pigimg {
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+float: right;
+right: 10rem ;
+width: 10rem;
+}
+
+.pigtext:hover + .pigimg {
+  opacity: 1;
+}
+
 
 
 
