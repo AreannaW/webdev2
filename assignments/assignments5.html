@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,600&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <!--Link JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/a5style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+    
+    $(document).ready(function(){
+        $('figure#love1').hide();
+        $('figure#love2').hide();
+        $('figure#love3').hide();
+    
+        $('button#show1').click(function() {
+                $('figure#love1').show();
+
+            }); //show.click
+
+            $('button#hide1').click(function() {
+                $('figure#love1').hide();
+            }); 
+            $('button#show2,show3').click(function() {
+                $('figure#love2').show();
+
+            }); //show.click
+
+            $('button#hide2').click(function() {
+                $('figure#love2').hide();
+             });
+        $('button#show3').click(function() {
+                $('figure#love3').show();
+
+            }); //show.click
+
+           
+            $('button.hide').click(function() {
+                $('figure#love3').hide();
+            });
+            
+            $('button.hide').click(function() {
+                $('figure#love2').hide();
+            });
+            $('button.hide').click(function() {
+                $('figure#love1').hide();
+            });
+    });
+
+    </script>
+     <header>
+            <h1>Nailz By Arey</h1>
+            <h2>Nail art by me. Everything is hand made by me.Enjoy!!! </h2>
+        </header>
+        <div id="hide">
+            <button class="hide">Hide All</button>
+            </div>
+
+        <main class="fake">
+    
+            <div class="box">
+                <div class="wrapper wrapper2">
+              <figure id="love1">
+                <img  src="../img/val1.jpg" alt="" srcset=""> 
+                <figcaption>Ice Cold</figcaption>
+              </figure>  
+               <button id="show1">Show</button> 
+             </div>
+            <div class="wrapper wrapper2">
+                   
+              
+              <figure id="love2">
+                <img src="../img/marble.jpg" alt="" srcset=""> 
+                <figcaption>Brown Marble</figcaption>
+              </figure> 
+              <button id="show2">Show</button>
+            </div>
+            <div class="wrapper wrapper3">
+                  
+                <figure id="love3">
+                  <img src="../img/val2.jpg" alt="" srcset=""> 
+                  <figcaption></figcaption>
+                </figure> 
+                <button id="show3">Show</button> 
+            </div>
+            
+            </div>
+           
+        </main>
+       
+</body>
+</html>
