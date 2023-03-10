@@ -236,8 +236,13 @@ flex-direction: row;
 .homeimg{
   width:40%;
 }
+#hometext{
+}
 .hometext1{
   left: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* A better looking default horizontal rule */
 hr {
@@ -308,7 +313,11 @@ hr {
 .pig {
   position: relative;
 }
-
+.bioimg{
+  width: 50vw;
+  display: flex;
+  align-content: center;
+  }
 .pigtext {
   font-size: 16px;
   font-weight: bold;
