@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style6.css">	
+    <title>Document</title>
+</head>
+<body>
+    <header>
+      <h1>Redesign Craigslist</h1>
+      <p>Created by Areanna</p>
+    </header>
+  
+    <main id="container">
+      <section id="section1">
+        <h2>Intro</h2>
+        <p>Craig Newmark founded Craigslist in 1995 as a free e-mail service listing future events in the Californian San Francisco Bay area.  Newmark built a website with a community for users to engage. Despite being one of the most well-known and widely used online marketplaces, Craigslist has a number of interface flaws that can make it difficult to use. The lack of user authentication, spam, and scam listings, outdated design, restricted posting facilities, and search limitations are just a few of the problems. I  will look at various solutions for these issues in this essay, along with approaches and techniques.</p>
+
+      </section>
+  <div id="home">h</div>
+      <section class="img" id="section2">
+        <h2>Goal</h2>
+        <p>The interface of Craigslist has several problems, starting with its outdated design. The website hasn't changed significantly in more than a decade and consumers may find its cluttered, text-heavy appearance confusing. 
+            The amount of spam and fraudulent listings on Craigslist is another problem. The lack of identity verification on the website is one reason for this. Due to Craigslist's lack of identity verification requirements, it may be simpler for scammers to post false advertisements. 
+            The interface of Craigslist has few posting features. Although users may upload text and photographs to make listings, there is little possibility for customization or personalization. 
+        </section>
+        <div class="img" id="shop">h</div>
+      <section id="section3">
+        <h2>Recommendations</h2>
+        <p>Outdated Design. Craigslist may alter its design to be more user-friendly and modern, with a unique visual structure and a responsive design that functions well on mobile devices, to solve this problem. This can entail a less cluttered interface with larger text sizes, greater use of whitespace, and better navigation.
+            Spam and Fraudulent.  To help with this, a system that asks users to prove their identity by providing payment or A buyer/seller rating system that lets users review their interactions with other users and gives each user a trustworthiness score might also be adopted on Craigslist. This might enable consumers to make safer transactions by assessing the reliability of a buyer or vendor.
+            Customization or Personalization. Craigslist might include the opportunity for users to upload additional photographs, videos, or even 3D models or virtual tours of things to enhance posting features. Moreover, they may provide customers with templates and tools to help them design listings and shops that are more aesthetically attractive. </p>
+      </section>
+    </main>
+  
+    <footer>
+      <p>© Areann 2023. All rights reserved.</p>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  
+    <!-- Container for your jQuery code -->
+    <script>
+  $(document).ready(function() {
+   
+  $(window).scroll(function() {
+   var mybutton = document.getElementById("myBtn");
+    var windowPosition = $(window).scrollTop();
+  
+    if (windowPosition>1000) {
+  $('section').css('background','lightGray');
+    }else{
+      $('section').css('background','lightBlue');
+    }//close if coditional
+  
+ 
+  var scrollTop = $(this).scrollTop();
+  var section1Top = $('#section1').offset().top;
+  var section2Top = $('#section2').offset().top;
+
+  if (scrollTop > section1Top && scrollTop < section2Top) {
+    $('#section1').addClass('fade');
+    $('#section2').removeClass('fade');
+  } else {
+    $('#section1').removeClass('fade');
+    $('#section2').addClass('fade');
+  }
+  });//close.scroll()
+  
+  }); //close .ready()
+  </script>
+</body>
+</html>
