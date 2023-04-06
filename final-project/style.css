@@ -1,13 +1,21 @@
  html{
     margin: 0px;
-    background-color: #DFDFD4;
+    background-color: #c0c0c2;
+}
+body{
+    background-color: #c0c0c2;
+    margin:0px;
+    padding: 0px;
 }
 h2{
     font-family: 'Comfortaa', cursive;
 }
 h5, p{
-    font-family: 'Gruppo', cursive;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.3vw;
+}
+p{
+    stroke-width:50px;
 }
 .fakenav {
     display: flex;
@@ -55,7 +63,6 @@ h5, p{
   
   body {
     font-family: Arial;
-    padding: 20px;
     background: #f1f1f1;
   }
   
@@ -82,21 +89,25 @@ h5, p{
   }
   
   /* Fake image */
+  img{
+    width:30vw;
+  }
   .fakeimg {
-    background-color: #aaa;
     width: 100%;
     padding: 20px;
 
   }
-  #img{
+  .img{
     padding-top:2vw;
   }
   
   /* Add a card effect for articles */
   .card {
-    background-color: #846954;
+    background-color:#696a42;
     padding: 20px;
     margin-top: 20px;
+    margin-left:20px;
+    margin-right: 10px;
     border-radius: 2vw;
   }
   
@@ -114,6 +125,11 @@ h5, p{
     background: #ddd;
     margin-top: 20px;
   }
+button a{
+    text-decoration: none;
+    color:black;
+}
+  
   .btn {
     position: relative;
     font-size: 17px;
@@ -127,7 +143,7 @@ h5, p{
     font-family: inherit;
     font-weight: 500;
     color: black;
-    background-color: #81BE1C;
+    background-color: #b8914c;
    }
    
    .btn:hover {
@@ -154,7 +170,7 @@ h5, p{
    }
    
    .btn::after {
-    background-color: #A5D74D;
+    background-color: #9e7d3c;
    }
    
    .btn:hover::after {
