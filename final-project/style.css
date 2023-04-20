@@ -10,6 +10,13 @@ body{
 h2{
     font-family: 'Comfortaa', cursive;
 }
+#highlight{
+    background-color: rgb(	184,145,76,0.2);
+    margin-right: 50px;
+}
+#dark{
+    opacity: 100%;
+}
 h5, p{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3vw;
