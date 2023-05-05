@@ -124,12 +124,72 @@ p{
     display: table;
     clear: both;
   }
+
+
+  /* blog */
+
+
+  .leftcolumn1 {
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn1 {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  img1{
+    width:30vw;
+  }
+  .fakeimg1 {
+    width: 100%;
+    padding: 20px;
+
+  }
+  .fakeimg2 {
+  width: 50%;
+
+  }
+  .img1{
+    padding-top:2vw;
+  }
+  
+  /* Add a card effect for articles */
+  .card1 {
+    
+    padding: 20px;
+    margin-top: 20px;
+    margin-left:20px;
+    margin-right: 10px;
+    border-radius: 2vw;
+  }
+  .card2 {
+    background-color: #9e7d3c;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left:20px;
+    margin-right: 10px;
+    border-radius: 2vw;
+  }
+  .sidebar{
+    font-size: 15px;
+  }
+  
+  /* Clear floats after the columns */
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
   
   /* Footer */
   .footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
     margin-top: 20px;
   }
 button a{
