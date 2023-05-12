@@ -1,10 +1,8 @@
  html {
    margin: 0px;
-   background-color: #c0c0c2;
  }
 
  body {
-   background-color: #c0c0c2;
    margin: 0px;
    padding: 0px;
  }
@@ -142,7 +140,7 @@
    clear: both;
  }
 
- #plant {
+ .plant {
    background-image: url(./img/pexels-ricky-esquivel-2560900.jpg);
    background-size: 75%;
  }
@@ -409,6 +407,11 @@
    top: 2vw;
    color: antiquewhite;
  }
+ .interview h2{
+  background-color: #264D06;
+  padding: 1vw ;
+  border-radius: 2vw;
+ }
 
  .colum3 {
    display: flex;
@@ -429,12 +432,32 @@
  }
 
  .mcolum {
-   margin: 0px 5vw;
+   margin: 2vw 5vw;
    color: black;
+   font-family: 'Gruppo', cursive;
+   background-color: #459FB0;
+   padding: 1vw;
+   border-radius: 2vw;
  }
+
+ .mcolum h5, .mcolum h3{
+  font-family:'Comfortaa', cursive; ;
+  font-size: 25px;
+  margin-bottom: 2vw;
+ }
+ 
 
  .rcolumn {
    margin-right: 5vw;
+
+ }
+ .read {
+  background-color: #696a42;
+  margin: 2vw;
+  padding: 1vw;
+ font-family: 'Comfortaa', cursive;
+  font-size: 15px;
+  border-radius: 1vw;
 
  }
 
@@ -472,6 +495,7 @@
 
  .inter {
    margin: 20px;
+   font-family: 'Comfortaa', cursive;
  }
 
  .who {
@@ -528,7 +552,33 @@
  .help {
    background-image: url("img/pexels-vasanth-babu-797793.jpg");
  }
+.help1{
+  background-image: url("img/pexels-chris-f-2929355.jpg");
+  background-size: 100%;
+}
+.help2{
+  background-image: url("img/pexels-alleksana-4113884.jpg");
+  background-size: 95%;
+}
+.circle {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  opacity: 0;
+  z-index: 9999;
+  transition: all 0.5s ease-out;
+}
 
+.circle.active {
+  opacity: 1;
+  transform: scale(2);
+}
  /*interview pages*/
 
  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -589,5 +639,8 @@
    .leftcolumn p,
    .leftcolumn h5 {
      font-size: 15px;
+   }
+   .read{
+    margin-right: 30vw;
    }
  }
